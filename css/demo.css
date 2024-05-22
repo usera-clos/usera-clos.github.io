@@ -161,3 +161,38 @@ a {
 	color: #aaa;
 	border-color: #aaa;
 }
+
+.floating-image {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	width: 100px; /* 调整图片宽度 */
+	height: auto; /* 让高度自动调整，保持图片比例 */
+	z-index: 1000; /* 保证图片在最前面 */
+}
+
+.speech-bubble {
+	position: fixed;
+	bottom: 100px; /* 调整气泡位置，使其在图片上方 */
+	left: 100px; /* 调整气泡位置，使其在图片右侧 */
+	background-color: rgba(240, 240, 240, 0.8);
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+	max-width: 200px;
+	z-index: 1000; /* 保证气泡在最前面 */
+}
+
+.speech-bubble::after {
+	content: '';
+	position: absolute;
+	bottom: -10px; /* 调整箭头位置 */
+	left: 20px; /* 调整箭头位置 */
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color: #f0f0f0;
+	border-bottom: 0;
+	margin-left: -10px;
+	margin-bottom: -10px;
+}

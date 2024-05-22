@@ -261,12 +261,18 @@
 .demo-1 .bg-1 .sl-slide-inner,
 .demo-1 .bg-1 .sl-content-slice {
 	background: #fff;
+	background-image: url(../images/tu-tak-1.jpeg);
+	background-size: cover; /* 背景图像自适应 */
+	background-position: center; /* 图像居中显示 */
 }
 
 /* Second Slide */
 .demo-1 .bg-2 .sl-slide-inner,
 .demo-1 .bg-2 .sl-content-slice {
 	background: #000;
+	background-image: url(../images/tu-tak-2.jpeg);
+	background-size: cover; /* 背景图像自适应 */
+	background-position: center; /* 图像居中显示 */
 }
 
 .demo-1 .bg-2 [data-icon]:after,
@@ -282,6 +288,9 @@
 .demo-1 .bg-3 .sl-slide-inner,
 .demo-1 .bg-3 .sl-content-slice {
 	background: #db84ad;
+	background-image: url(../images/tu-tak-3.jpeg);
+	background-size: cover; /* 背景图像自适应 */
+	background-position: center; /* 图像居中显示 */
 }
 
 .demo-1 .bg-3 .deco {
@@ -303,12 +312,16 @@
 
 .demo-1 .bg-3 blockquote:before {
 	color: #c46c96;
+	
 }
 
 /* Forth Slide */
 .demo-1 .bg-4 .sl-slide-inner,
 .demo-1 .bg-4 .sl-content-slice {
 	background: #5bc2ce;
+	background-image: url(../images/tu-tak-4-5.png);
+	background-size: cover; /* 背景图像自适应 */
+	background-position: center; /* 图像居中显示 */
 }
 
 .demo-1 .bg-4 .deco {
@@ -333,11 +346,30 @@
 /* Fifth Slide */
 .demo-1 .bg-5 .sl-slide-inner,
 .demo-1 .bg-5 .sl-content-slice {
-	background: #ffeb41;
+	background-image: url(../images/tu-tak-6-7.png);
+	background-size: cover; /* 背景图像自适应 */
+	background-position: center; /* 图像居中显示 */
+}
+
+/* Fifth Slide */
+.demo-1 .bg-6 .sl-slide-inner,
+.demo-1 .bg-6 .sl-content-slice {
+	background-image: url(../images/tu-tak-8.jpeg);
+	background-size: cover; /* 背景图像自适应 */
+	background-position: center; /* 图像居中显示 */
+}
+
+.demo-1 .bg-7 .sl-slide-inner,
+.demo-1 .bg-7 .sl-content-slice {
+	background-image: url(../images/tu-tak-9-10.jpg);
+	background-size: 100% 100%; /* 背景图像自适应 */
+
+	background-position: center; /* 图像居中显示 */
 }
 
 .demo-1 .bg-5 .deco {
 	border-color: #ECD82C;
+
 }
 
 .demo-1 .bg-5 .deco:after {
