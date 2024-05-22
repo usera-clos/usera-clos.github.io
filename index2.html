@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audio Text Association</title>
+</head>
+<body>
+
+<audio id="myAudio" controls>
+  <source src="./audio/tu.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div id="textContainer">
+  <p id="text1" class="audioText">This is the text for the first segment.</p>
+  <p id="text2" class="audioText">This is the text for the second segment.</p>
+  <!-- Add more text segments as needed -->
+</div>
+
+<script>
+  const audio = document.getElementById('myAudio');
+  const textSegments = document.getElementsByClassName('audioText');
+
+  // Define time segments and associated text
+  const timeSegments = [
+    { start: 0, end: 5, textId: 'text1' },
+    { start: 5, end: 10, textId: 'text2' }
+    // Add more time segments as needed
+  ];
+
+  // Function to display text based on current audio time
+  function displayText() {
+    const currentTime = audio.currentTime;
+    for (const segment of timeSegments) {
+      if (currentTime >= segment.start && currentTime <= segment.end) {
+        const textToShow = document.getElementById(segment.textId);
+        textToShow.style.display = 'block';
+      } else {
+        const textToHide = document.getElementById(segment.textId);
+        textToHide.style.display = 'none';
+      }
+    }
+  }
+
+  // Event listener for timeupdate event of audio element
+  audio.addEventListener('timeupdate', displayText);
+</script>
+
+</body>
+</html>

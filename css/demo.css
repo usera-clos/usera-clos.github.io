@@ -196,3 +196,19 @@ a {
 	margin-left: -10px;
 	margin-bottom: -10px;
 }
+  /* 设置悬浮播放按钮样式 */
+  #playButton {
+    position: fixed; /* 固定在屏幕上 */
+    right: 20px; /* 距离屏幕右侧 20px */
+    bottom: 20px; /* 距离屏幕底部 20px */
+    z-index: 9999; /* 将按钮置于最上层 */
+    background-color: #ff0000; /* 按钮背景色 */
+    color: #fff; /* 文字颜色 */
+    border: none; /* 移除边框 */
+    border-radius: 50%; /* 圆角边框 */
+    width: 50px; /* 按钮宽度 */
+    height: 50px; /* 按钮高度 */
+    font-size: 24px; /* 字体大小 */
+    cursor: pointer; /* 鼠标样式 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+  }

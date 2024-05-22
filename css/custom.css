@@ -264,6 +264,7 @@
 	background-image: url(../images/tu-tak-1.jpeg);
 	background-size: cover; /* 背景图像自适应 */
 	background-position: center; /* 图像居中显示 */
+	transition: background-image 0.5s ease-in-out;
 }
 
 /* Second Slide */
