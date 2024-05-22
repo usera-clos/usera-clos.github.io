@@ -128,7 +128,13 @@
 			{ start: 115, end: 120, textId: 'text24',imgId:'./images/tu-tak-9-10.jpg'},
 			// Add more time segments as needed
 		];
+		const imageUrls = timeSegments.map(data => data.imgId);
 
+			window.onload = function() {
+			preloadImages(imageUrls, () => {
+				console.log('所有图片预加载完成');
+			});
+			};
 		  // Function to display text based on current audio time
 		  function displayText() {
     		const currentTime = audioPlayer.currentTime;
@@ -149,7 +155,27 @@
 
 		// Event listener for timeupdate event of audio element
 		audioPlayer.addEventListener('timeupdate', displayText);
+		function preloadImages(urls, allImagesLoadedCallback) {
+			let loadedCount = 0;
+			const imageCount = urls.length;
 
+			urls.forEach(url => {
+				const img = new Image();
+				img.onload = () => {
+				loadedCount++;
+				if (loadedCount === imageCount) {
+					allImagesLoadedCallback();
+				}
+				};
+				img.onerror = () => {
+				loadedCount++;
+				if (loadedCount === imageCount) {
+					allImagesLoadedCallback();
+				}
+				};
+				img.src = url;
+			});
+			}
 		const interval = 
 			$(function() {
 				var Page = (function() {
