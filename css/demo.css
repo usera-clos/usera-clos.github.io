@@ -206,16 +206,9 @@ a {
     color: #fff; /* 文字颜色 */
     border: none; /* 移除边框 */
     border-radius: 50%; /* 圆角边框 */
-    width: 60px; /* 按钮宽度 */
-    height: 60px; /* 按钮高度 */
-    font-size: 40px; /* 字体大小 */
+    width: 50px; /* 按钮宽度 */
+    height: 50px; /* 按钮高度 */
+    font-size: 30px; /* 字体大小 */
     cursor: pointer; /* 鼠标样式 */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* 阴影效果 */
-	display: flex; /* 使用 flex 布局 */
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
-    transform-origin: center; /* 设置变换的原点为中心 */
   }
-  #playButton span {
-    transform: scale(1); /* 默认缩放比例 */
-}

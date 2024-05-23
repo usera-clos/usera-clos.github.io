@@ -26,44 +26,45 @@
 		</style>
     </head>
     <body>
-		<!-- 播放按钮 -->
-        <button id="playButton">
-			<span>&#9658;</span>
-		</button>
-		<audio id="audioPlayer">
-			<source src="./audio/he.mp3" type="audio/mpeg">
-			Your browser does not support the audio element.
-		</audio>
-        <img id="icon" src="./images/tu.png" alt="悬浮图片" class="floating-image">
-		<div class="speech-bubble" id="speechBubble">
-			<p id="tip"   class="tipText">点击右侧按钮播放语音讲解</p>
-			<p id="text1" class="audioText">大家好，我是红小兔，今天给大家讲一下，薪火红色文创产品的灵感来源小故事。星星之火可以燎原的故事。</p>
-			<p id="text2" class="audioText">1929年1月，大雪过后，井冈山寒冷。毛泽东建立根据地，革命力量发展壮大。国民党反动派先后向井冈山发起三次“会剿”。</p>
-			<p id="text3" class="audioText">面对严峻形势，毛泽东等决定，彭德怀的红五军留守井冈山，毛泽东、朱德率领红四军主力3600多人，离开井冈山，出击赣南。</p>
-			<p id="text4" class="audioText">为了避免硬拼和争取主动，红四军主力在赣南流动作战。流动作战是艰难的。一天，毛泽东、朱德率领部队在寻乌圳下村宿营。</p>
-			<p id="text5" class="audioText">国民党军一部来偷袭。习惯夜间工作的毛泽东和朱德等还没有来得及起床，就陷入敌军的包围之中。</p>
-			<p id="text6" class="audioText">一时，四面枪声大作，红军勇猛突围，跟敌人进行了一场肉搏战。毛泽东与贺子珍由警卫员掩护，蹚水过河，突围上山。</p>
-			<p id="text7" class="audioText">在这么艰难的环境中，毛泽东和朱德率领红四军依然没有放弃在运动中调动敌人，使其兵力分散，以便红军能够在有利时机集中兵力歼其一部，恢复主动地位。</p>
-			<p id="text8" class="audioText">1929年4月，红四军前委在瑞金接到中共中央2月发出的致红四军前委的信(即中央《二月来信》)。</p>
-			<p id="text9" class="audioText">信中依据共产国际的指示，对国内革命形势作出了悲观的估计，主张“将红军的武装力量分成小部队的组织散入湘赣边境各乡村中进行和深入土地革命”</p>
-			<p id="text10" class="audioText">同时，要求朱德、毛泽东两个人必须离开红四军。毛泽东代表前委回信中央，指出关于中央在来信中提出的“分兵”和朱、毛离队问题，</p>
-			<p id="text11" class="audioText">红四军前委多数同志都持反对态度。毛泽东在信中说：“中央要我们将队伍分得很小，散在农村中，朱、毛离开队伍，隐匿大的目标，</p>
-			<p id="text12" class="audioText">目的在于保存红军力量和发动群众，这是一种不切实际的想法。”中央收到此信后，在周恩来的努力下，没有坚持原议，朱、毛因此没有离开红四军。</p>
-			<p id="text13" class="audioText">然而，中央《二月来信》在红军中产生了很不好的影响。1930年元旦，时任红四军第一纵队纵队长林彪致信毛泽东，</p>
-			<p id="text14" class="audioText">信中主张大敌当前，红四军应分散去打游击，各自找出路。信中过高估计了敌人的军事力量，弥漫着一股悲观情绪。</p>
-			<p id="text15" class="audioText">早在1929年底“古田会议”后，毛泽东就开始重视党内和军内弥漫的悲观情绪。当他看到林彪的“新年贺信”后，</p>
-			<p id="text16" class="audioText">觉得这是一个非常好的机会，他希望通过回复林彪来信的方式，阐明他对中国革命和红军前途的看法，清除党内军内的消极情绪。</p>
-			<p id="text17" class="audioText">1930年1月5日，毛泽东利用难得的战斗间隙，在古田赖坊一家店铺的阁楼上，秉烛夜书，写下一封长信，即后来的《星星之火，可以燎原》。</p>
-			<p id="text18" class="audioText">大家好,我是黄小龙,今天给大家讲一下，薪火红色文创产品的灵感来源小故事。红船故事。</p>
-			<p id="text19" class="audioText">1921年7月，中国共产党第一次全国代表大会在上海秘密举行。因遭到上海法租界巡捕袭扰，会议被迫中止。但代表们并没有退缩，</p>
-			<p id="text20" class="audioText">而是将会议的地点转移到浙江嘉兴南湖的一艘船上，完成了大会的最后议程。这次会议结束后，代表们把革命的火种带向全国各地。</p>
-			<p id="text21" class="audioText">从此，中国革命的航船从南湖扬帆启航，中国的历史开启了全新的篇章。</p>
-			<p id="text22" class="audioText">为纪念中共一大在嘉兴南湖胜利闭幕这一重大历史事件，1959年，南湖革命纪念馆建成开放，以湖中烟雨楼作为馆址，</p>
-			<p id="text23" class="audioText">按照当年中共一大代表乘坐的游船样式仿制的红船纪念船正式下水，向世人展出。20世纪60年代，中共一大代表董必武两次重访南湖，</p>
-			<p id="text24" class="audioText">写下了“烟雨楼台革命萌生，此间曾著星星火；风云世界逢春蛰起，到处皆闻殷殷雷”的感慨。改革开放后,</p>
-			<p id="text25" class="audioText">党和国家领导人亲切关怀党的诞生地，或瞻仰红船，或亲笔题词，勉励我们“沿着南湖红船开辟的革命航道奋勇前进”。</p>
-		</div>
+
 		<div class="container demo-1">
+					<!-- 播放按钮 -->
+					<button id="playButton">
+						&#9658;
+					</button>
+					<audio id="audioPlayer">
+						<source src="./audio/he.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+					<img id="icon" src="./images/tu.png" alt="悬浮图片" class="floating-image">
+					<div class="speech-bubble" id="speechBubble">
+						<p id="tip"   class="tipText">点击右侧按钮播放语音讲解</p>
+						<p id="text1" class="audioText">大家好，我是红小兔，今天给大家讲一下，薪火红色文创产品的灵感来源小故事。星星之火可以燎原的故事。</p>
+						<p id="text2" class="audioText">1929年1月，大雪过后，井冈山寒冷。毛泽东建立根据地，革命力量发展壮大。国民党反动派先后向井冈山发起三次“会剿”。</p>
+						<p id="text3" class="audioText">面对严峻形势，毛泽东等决定，彭德怀的红五军留守井冈山，毛泽东、朱德率领红四军主力3600多人，离开井冈山，出击赣南。</p>
+						<p id="text4" class="audioText">为了避免硬拼和争取主动，红四军主力在赣南流动作战。流动作战是艰难的。一天，毛泽东、朱德率领部队在寻乌圳下村宿营。</p>
+						<p id="text5" class="audioText">国民党军一部来偷袭。习惯夜间工作的毛泽东和朱德等还没有来得及起床，就陷入敌军的包围之中。</p>
+						<p id="text6" class="audioText">一时，四面枪声大作，红军勇猛突围，跟敌人进行了一场肉搏战。毛泽东与贺子珍由警卫员掩护，蹚水过河，突围上山。</p>
+						<p id="text7" class="audioText">在这么艰难的环境中，毛泽东和朱德率领红四军依然没有放弃在运动中调动敌人，使其兵力分散，以便红军能够在有利时机集中兵力歼其一部，恢复主动地位。</p>
+						<p id="text8" class="audioText">1929年4月，红四军前委在瑞金接到中共中央2月发出的致红四军前委的信(即中央《二月来信》)。</p>
+						<p id="text9" class="audioText">信中依据共产国际的指示，对国内革命形势作出了悲观的估计，主张“将红军的武装力量分成小部队的组织散入湘赣边境各乡村中进行和深入土地革命”</p>
+						<p id="text10" class="audioText">同时，要求朱德、毛泽东两个人必须离开红四军。毛泽东代表前委回信中央，指出关于中央在来信中提出的“分兵”和朱、毛离队问题，</p>
+						<p id="text11" class="audioText">红四军前委多数同志都持反对态度。毛泽东在信中说：“中央要我们将队伍分得很小，散在农村中，朱、毛离开队伍，隐匿大的目标，</p>
+						<p id="text12" class="audioText">目的在于保存红军力量和发动群众，这是一种不切实际的想法。”中央收到此信后，在周恩来的努力下，没有坚持原议，朱、毛因此没有离开红四军。</p>
+						<p id="text13" class="audioText">然而，中央《二月来信》在红军中产生了很不好的影响。1930年元旦，时任红四军第一纵队纵队长林彪致信毛泽东，</p>
+						<p id="text14" class="audioText">信中主张大敌当前，红四军应分散去打游击，各自找出路。信中过高估计了敌人的军事力量，弥漫着一股悲观情绪。</p>
+						<p id="text15" class="audioText">早在1929年底“古田会议”后，毛泽东就开始重视党内和军内弥漫的悲观情绪。当他看到林彪的“新年贺信”后，</p>
+						<p id="text16" class="audioText">觉得这是一个非常好的机会，他希望通过回复林彪来信的方式，阐明他对中国革命和红军前途的看法，清除党内军内的消极情绪。</p>
+						<p id="text17" class="audioText">1930年1月5日，毛泽东利用难得的战斗间隙，在古田赖坊一家店铺的阁楼上，秉烛夜书，写下一封长信，即后来的《星星之火，可以燎原》。</p>
+						<p id="text18" class="audioText">大家好,我是黄小龙,今天给大家讲一下，薪火红色文创产品的灵感来源小故事。红船故事。</p>
+						<p id="text19" class="audioText">1921年7月，中国共产党第一次全国代表大会在上海秘密举行。因遭到上海法租界巡捕袭扰，会议被迫中止。但代表们并没有退缩，</p>
+						<p id="text20" class="audioText">而是将会议的地点转移到浙江嘉兴南湖的一艘船上，完成了大会的最后议程。这次会议结束后，代表们把革命的火种带向全国各地。</p>
+						<p id="text21" class="audioText">从此，中国革命的航船从南湖扬帆启航，中国的历史开启了全新的篇章。</p>
+						<p id="text22" class="audioText">为纪念中共一大在嘉兴南湖胜利闭幕这一重大历史事件，1959年，南湖革命纪念馆建成开放，以湖中烟雨楼作为馆址，</p>
+						<p id="text23" class="audioText">按照当年中共一大代表乘坐的游船样式仿制的红船纪念船正式下水，向世人展出。20世纪60年代，中共一大代表董必武两次重访南湖，</p>
+						<p id="text24" class="audioText">写下了“烟雨楼台革命萌生，此间曾著星星火；风云世界逢春蛰起，到处皆闻殷殷雷”的感慨。改革开放后,</p>
+						<p id="text25" class="audioText">党和国家领导人亲切关怀党的诞生地，或瞻仰红船，或亲笔题词，勉励我们“沿着南湖红船开辟的革命航道奋勇前进”。</p>
+					</div>
             <div id="slider" class="sl-slider-wrapper">
 				<div class="sl-slider">
 					<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
