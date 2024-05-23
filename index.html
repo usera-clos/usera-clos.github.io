@@ -165,7 +165,7 @@
 		audioPlayer.addEventListener('timeupdate', displayText);
 
 		audioPlayer.addEventListener('ended',()=>{
-			playButton.innerHTML = '&#9658;';
+			playButton.innerHTML = '<i class="fas fa-play"></i>';
 			tip.style.display='block';
 			tip.innerHTML='您可以点击按钮重新播放'
 		})
