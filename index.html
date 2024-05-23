@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 		<noscript>
 			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
@@ -30,7 +31,7 @@
 		<div class="container demo-1">
 					<!-- 播放按钮 -->
 					<button id="playButton">
-						&#9658;
+						<i class="fas fa-play"></i>
 					</button>
 					<audio id="audioPlayer">
 						<source src="./audio/he.mp3" type="audio/mpeg">
@@ -95,12 +96,12 @@
 		const speechBubble = document.getElementById('speechBubble');
 		if (audioPlayer.paused) {
 			audioPlayer.play();
-			playButton.innerHTML = '&#10074;&#10074;'; // 暂停图标
+			playButton.innerHTML = '<i class="fas fa-pause"></i>'; // 暂停图标
 			tip.style.display='none';
 			
 		} else { // 否则暂停音频
 			audioPlayer.pause();
-			playButton.innerHTML = '&#9658;'; // 播放图标
+			playButton.innerHTML = '<i class="fas fa-play"></i>'; // 播放图标
 			// //暂停时,对话更新暂停,图片切换暂停
 		}
 		});
